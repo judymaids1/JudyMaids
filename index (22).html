@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>JudyMaids | Luxury Cleaning Services in Rockville, MD</title>
+<meta name="description" content="JudyMaids delivers premium home and office cleaning in Rockville, MD. Open 24/7. Call (301) 351-1492.">
+<link rel="icon" href="https://judymaids.com/wp-content/uploads/2026/04/cropped-favjudymade2-270x270.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050b1f;--bg2:#0a1535;--blue:#2f6bff;--gold:#d9b66b;--txt:#e8ecf8;--mut:#9aa6c7;--card:rgba(14,26,62,.62);--line:rgba(217,182,107,.22)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold);color:#050b1f}
+::-moz-selection{background:var(--gold);color:#050b1f}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15}
+#bg{position:fixed;inset:0;z-index:-1;width:100%;height:100%}
+.wrap{max-width:1200px;margin:auto;padding:0 22px}
+section{padding:96px 0;position:relative}
+.tag{color:var(--gold);letter-spacing:.3em;font-size:.75rem;text-transform:uppercase;font-weight:600}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);margin:10px 0 16px}
+.lead{color:var(--mut);max-width:680px}
+.center{text-align:center}.center .lead{margin:auto}
+.btn{display:inline-block;padding:14px 32px;border-radius:50px;font-weight:600;border:1px solid var(--gold);cursor:pointer;transition:.35s;font-size:.95rem}
+.btn.p{background:linear-gradient(135deg,var(--gold),#f1d89a);color:#050b1f;box-shadow:0 10px 40px rgba(217,182,107,.3)}
+.btn:hover{transform:translateY(-4px);box-shadow:0 14px 44px rgba(47,107,255,.45)}
+/* loader */
+#ld{position:fixed;inset:0;background:var(--bg);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .9s,visibility .9s;perspective:800px}
+#ld.h{opacity:0;visibility:hidden}
+#ld .logo3{background:#fff;padding:14px 26px;display:flex;border-radius:18px;animation:spin 2.4s ease-in-out infinite;box-shadow:0 0 60px rgba(47,107,255,.6)}
+#ld img{height:80px;width:auto}
+#ld b{font-family:'Playfair Display';letter-spacing:.4em;font-size:1.1rem;color:var(--gold)}
+.bar{width:220px;height:3px;background:#1a264d;overflow:hidden;border-radius:3px}.bar i{display:block;height:100%;width:40%;background:linear-gradient(90deg,var(--blue),var(--gold));animation:ld 1.2s infinite}
+@keyframes ld{from{margin-left:-40%}to{margin-left:100%}}
+@keyframes spin{0%,100%{transform:rotateY(-25deg) rotateX(8deg)}50%{transform:rotateY(25deg) rotateX(-8deg)}}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,11,31,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .lg{background:#fff;border-radius:12px;padding:6px 14px;display:flex;align-items:center;min-height:56px}.dk{background:linear-gradient(135deg,#0a1535,#16264f)!important;border:1px solid var(--gold)}.fb{font-family:"Playfair Display";font-weight:700;color:#0a1535;font-size:1.3rem}
+.brand img{height:54px;width:auto;object-fit:contain}
+.brand span{font-family:'Playfair Display';font-size:1.45rem;font-weight:700;background:linear-gradient(90deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:6px;align-items:center}
+nav>a,.dd>a{padding:10px 14px;font-size:.92rem;font-weight:500;border-radius:8px;transition:.3s;display:block}
+nav a:hover,nav a.on{color:var(--gold)}
+.dd{position:relative}
+.dd .m{position:absolute;top:100%;left:0;min-width:270px;background:#0a1535;border:1px solid var(--line);border-radius:14px;padding:8px;opacity:0;visibility:hidden;transform:translateY(12px) rotateX(-10deg);transition:.3s;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.dd:hover .m{opacity:1;visibility:visible;transform:none}
+.dd .m a{display:block;padding:9px 14px;border-radius:8px;font-size:.88rem}
+.dd .m a:hover{background:rgba(217,182,107,.12);color:var(--gold)}
+#bt{display:none;background:none;border:1px solid var(--line);color:var(--gold);font-size:1.5rem;padding:4px 12px;border-radius:8px}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px}
+.hero .g{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);margin:14px 0 20px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hi{perspective:1100px}
+.hi div{border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 80px rgba(47,107,255,.25);transform:rotateY(-12deg) rotateX(4deg);transition:transform .2s}
+.hi img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.stats{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap}.stats b{font-family:'Playfair Display';font-size:2rem;color:var(--gold);display:block}.stats small{color:var(--mut)}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:28px;margin-top:50px;perspective:1200px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;backdrop-filter:blur(12px);transition:transform .25s,box-shadow .3s;transform-style:preserve-3d;display:flex;flex-direction:column}
+.card:hover{box-shadow:0 30px 70px rgba(47,107,255,.28)}
+.card img{width:100%;height:230px;object-fit:cover}
+.card .b{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.3rem}.card p{color:var(--mut);font-size:.93rem;flex:1}
+.card .more{color:var(--gold);font-weight:600;font-size:.9rem}
+.why .card{padding:30px}.why .ic{font-size:2rem;margin-bottom:8px}
+.rv .card{padding:28px}.st{color:var(--gold);letter-spacing:3px}.rv small{color:var(--gold)}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.sp img{border-radius:24px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5);width:100%;height:440px;object-fit:cover}
+ul.ck{list-style:none;margin:16px 0}ul.ck li{padding:6px 0 6px 30px;position:relative;color:var(--mut)}ul.ck li:before{content:"✦";position:absolute;left:0;color:var(--gold)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 24px;margin-bottom:14px;max-width:860px;margin-inline:auto}
+summary{cursor:pointer;font-weight:600;list-style:none}summary:after{content:"+";float:right;color:var(--gold);font-size:1.3rem}details[open] summary:after{content:"–"}details p{color:var(--mut);margin-top:10px}
+.pg{padding-top:150px}
+.gal{columns:3 260px;column-gap:18px;margin-top:40px}.gal img{width:100%;border-radius:16px;margin-bottom:18px;border:1px solid var(--line);transition:.4s}.gal img:hover{transform:scale(1.03)}
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:40px}.areas div{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-weight:600}.areas div:before{content:"📍 "}
+.cta{text-align:center;background:linear-gradient(135deg,rgba(47,107,255,.25),rgba(217,182,107,.15));border:1px solid var(--line);border-radius:30px;padding:64px 24px}
+form{display:grid;gap:14px}input,textarea,select{width:100%;padding:14px 18px;border-radius:12px;border:1px solid var(--line);background:rgba(5,11,31,.7);color:var(--txt);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--gold)}
+/* footer */
+footer{background:rgba(3,7,20,.92);border-top:1px solid var(--line);padding:70px 0 26px}
+.fg{display:grid;grid-template-columns:1.2fr .8fr 1.2fr 1.4fr;gap:36px}
+footer h4{color:var(--gold);margin-bottom:14px;font-family:'Playfair Display'}footer li{list-style:none;margin:7px 0;color:var(--mut);font-size:.92rem}footer a:hover{color:var(--gold)}
+footer iframe{width:100%;height:200px;border-radius:14px}
+.cp{text-align:center;color:var(--mut);font-size:.82rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
+.rev{opacity:0;transform:translateY(60px) rotateX(10deg);transition:1s cubic-bezier(.2,.7,.2,1)}.rev.in{opacity:1;transform:none}
+@media(max-width:960px){#bt{display:block}nav{position:fixed;top:84px;left:0;right:0;background:#050b1f;flex-direction:column;align-items:stretch;padding:16px;max-height:calc(100vh - 84px);overflow:auto;display:none}nav.o{display:flex}.dd .m{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0}.hero .g,.sp,.fg{grid-template-columns:1fr}.hi div{transform:none}.brand span{font-size:1.1rem}.brand img{height:44px}}
+
+.hero{overflow:hidden}.hb{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hb i{position:absolute;bottom:-60px;border-radius:50%;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.75),rgba(140,190,255,.12) 45%,rgba(255,255,255,.05) 70%);border:1px solid rgba(180,215,255,.45);animation:rise linear infinite}
+@keyframes rise{0%{transform:translate(0,0) scale(.6);opacity:0}10%{opacity:1}100%{transform:translate(var(--dx),-115vh) scale(1.1);opacity:0}}
+.hi{position:relative}.hi>div{position:relative}
+.dust{position:absolute;inset:0;background:radial-gradient(circle at 30% 40%,rgba(120,110,95,.75),transparent 55%),radial-gradient(circle at 70% 65%,rgba(90,85,80,.7),transparent 50%),rgba(60,60,60,.35);backdrop-filter:blur(7px) grayscale(.8);animation:clean 7s ease-in-out infinite}
+@keyframes clean{0%,12%{clip-path:inset(0 0 0 0)}55%,100%{clip-path:inset(0 0 0 100%)}}
+.wipe{position:absolute;top:-10%;bottom:-10%;width:60px;left:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);filter:blur(4px);animation:wp 7s ease-in-out infinite}
+@keyframes wp{0%,12%{left:-10%;opacity:0}14%{opacity:1}55%{left:100%;opacity:1}58%,100%{left:105%;opacity:0}}
+.shine{position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);animation:sh 7s ease-in-out infinite}
+@keyframes sh{0%,58%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+.sp{position:absolute;color:#fff;font-size:2rem;text-shadow:0 0 14px var(--gold),0 0 30px #fff;opacity:0;animation:tw 7s ease-in-out infinite}
+.s1{top:12%;left:14%;animation-delay:3.6s}.s2{top:30%;right:12%;animation-delay:4s;font-size:1.4rem}.s3{bottom:22%;left:26%;animation-delay:4.4s;font-size:1.6rem}.s4{bottom:12%;right:20%;animation-delay:4.8s;font-size:2.4rem}
+@keyframes tw{0%,50%{opacity:0;transform:scale(0) rotate(0)}58%{opacity:1;transform:scale(1.3) rotate(90deg)}70%,100%{opacity:0;transform:scale(0) rotate(180deg)}}
+.fi{position:absolute;font-size:2.6rem;filter:drop-shadow(0 10px 18px rgba(0,0,0,.5));animation:fl 5s ease-in-out infinite}
+.f1{top:-24px;left:-20px}.f2{top:20%;right:-24px;animation-delay:1s}.f3{bottom:-20px;left:12%;animation-delay:2s}.f4{bottom:16%;right:-18px;animation-delay:3s}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-18px) rotate(10deg)}}
+@media(max-width:960px){.fi{font-size:1.8rem}.f1,.f2,.f4{left:auto}.f2,.f4{right:4px}}
+#hc{width:100%;aspect-ratio:4/4.4;display:block}.lb{position:absolute;left:16px;bottom:14px;font-style:normal;font-size:.72rem;letter-spacing:.14em;padding:6px 12px;border-radius:30px;background:rgba(5,11,31,.7);border:1px solid var(--line);color:var(--gold)}
+</style>
+</head>
+<body>
+<div id="ld"><div class="logo3 lg"><img class="logoimg" src="https://judymaids.com/wp-content/uploads/2026/02/Judy-Maids-logo.png" alt="JudyMaids"></div><b>JUDYMAIDS</b><div class="bar"><i></i></div></div>
+<canvas id="bg"></canvas>
+<header><div class="wrap hd">
+<a class="brand" href="#/"><span class="lg"><img class="logoimg" src="https://judymaids.com/wp-content/uploads/2026/02/Judy-Maids-logo.png" alt="JudyMaids logo"></span><span>JudyMaids</span></a>
+<button id="bt" aria-label="Menu">☰</button>
+<nav id="nv"></nav>
+</div></header>
+<main id="app"></main>
+<footer><div class="wrap">
+<div class="fg">
+<div><h4>JudyMaids</h4><p style="color:var(--mut);font-size:.92rem">Premium cleaning for Rockville homes and workplaces. Certified teams, detail-driven results, open 24/7.</p></div>
+<div><h4>Quick Links</h4><ul><li><a href="#/">Home</a></li><li><a href="#/about">About Us</a></li><li><a href="#/services">Services</a></li><li><a href="#/contact">Contact</a></li></ul></div>
+<div><h4>Contact Information</h4><ul><li>📍 Rockville, MD</li><li>📞 <a href="tel:+13013511492">(301) 351-1492</a></li><li>✉️ <a href="mailto:info@judymaids.com">info@judymaids.com</a></li><li>🕒 Open 24/7</li></ul></div>
+<div><h4>Find Us</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177835.07876797815!2d-77.14453395!3d39.07748395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa812cb202b2f862d%3A0x5a67b616ca63f631!2sJudyMaids!5e1!3m2!1sen!2s!4v1794601162631!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+</div>
+<div class="cp">© 2026 JudyMaids. All rights reserved. · <a href="https://maps.app.goo.gl/cdJbueevJAux5v9n9" target="_blank" rel="noopener">Google Business Profile</a></div>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const U='https://judymaids.com/wp-content/uploads/';
+const BOOK='https://book.housecallpro.com/book/JudyMaids/2178df13c54d49318c19557ed1890959';
+const S=[
+{id:'signature-protect-reset',n:'Signature Protect & Reset',img:U+'2026/03/Signature-Protect-Reset-Package-Premium-Service.png',s:'Our premium service: a deep clean plus protective finishing that elevates your home to a higher standard.',d:'The Signature Protect & Reset Package is our most complete experience. Every surface is deep cleaned, then protected so the freshness lasts, leaving your home elevated the moment you walk in.',l:['Top-to-bottom deep cleaning','Protective finishing touches','Detail inspection by a certified lead','Customized to your home and priorities']},
+{id:'daily-reset-plan',n:'Daily Reset Plan',img:U+'2026/03/Deaily-reset.webp',s:'Maintenance two or three times a week so your home always feels clean and under control.',d:'Busy households and hosts need constant order. The Daily Reset Plan keeps kitchens, baths, and living spaces consistently maintained, so mess never builds up.',l:['2–3 visits every week','Kitchens, bathrooms and living areas','Consistent assigned team','Flexible scheduling']},
+{id:'essential-care-plan',n:'Essential Care Plan',img:U+'2026/03/Essential-Cleaning-Package.webp',s:'Our most popular plan: weekly, bi-weekly or monthly care that keeps everything handled.',d:'Choose the rhythm that suits your life. The Essential Care Plan delivers dependable recurring cleaning with clear communication and zero guesswork.',l:['Weekly, bi-weekly or monthly','Standard whole-home cleaning','Kitchen and bathroom focus','Easy online booking']},
+{id:'deep-reset',n:'Deep Reset',img:U+'2026/03/Deep-Reset-Package.webp',s:'A complete top-to-bottom deep clean where every detail is handled and nothing is overlooked.',d:'Perfect for seasonal refreshes, after busy months, or before guests arrive. Our certified team reaches the corners and details that routine cleaning misses.',l:['Baseboards, vents and fixtures','Inside appliances on request','Heavy kitchen and bathroom scrubbing','Ideal as a first-time reset']},
+{id:'seamless-move-package',n:'Seamless Move Package',img:U+'2026/03/Move-In-Move-Out-Cleaning.webp',s:'Move-in and move-out cleaning with moving coordination through Movers USA.',d:'You focus on the move, we handle the rest. We leave your old home spotless for handover and your new home fresh before the first box arrives.',l:['Move-in and move-out cleaning','Moving coordination support','Deposit-ready results','On-time, thorough teams']},
+{id:'office-commercial',n:'Office & Commercial',img:U+'2026/02/Office-commercial-1.webp',s:'Polished, organized workspaces that make your team focused and your clients confident.',d:'A clean workspace reflects your standards. We provide reliable commercial cleaning on schedules that fit your business, day or night.',l:['Offices, clinics and retail','Nightly, weekly or custom schedules','Reception and common areas','Restrooms and break rooms']}];
+const G=[U+'2026/10/Gemini_Generated_Image_xcskvkxcskvkxcsk.webp',U+'2026/10/Gemini_Generated_Image_mv9nq4mv9nq4mv9n.webp',U+'2026/02/2025-07-18.webp',U+'2026/02/2024-04-10.webp',U+'2026/02/2025-09-19-5.webp',U+'2026/02/2024-03-21-9.webp',U+'2026/02/2024-03-21-10.webp',U+'2026/02/2024-05-15.webp',U+'2026/02/2024-03-21.jpg'];
+const R=[['Bonnie Resnick','Excellent work and attention to detail. Our rooms feel totally transformed and we will definitely call again!'],['Naomi Blake','Exceptional from customer service to the cleaning itself. Perfect for my newly moved-in apartment.'],['Sabrina Ingale','They showed up on time before I handed over the keys and didn’t miss anything.'],['William Boykin','Excellent service and highly responsive to specific requests.']];
+const FQ=[['What areas do you serve?','We serve Rockville, MD and surrounding Montgomery County communities.'],['Are your cleaners trained and insured?','Yes. Every cleaner is trained, tested, certified and quality checked, and we are fully insured.'],['How do I book?','Use the Book Now button, call (301) 351-1492 or email info@judymaids.com. We are available 24/7.'],['Can I customize my cleaning plan?','Absolutely. Every plan is built around your home, priorities and routine.'],['Do you clean offices?','Yes, our Office & Commercial service covers workplaces of many sizes.']];
+const card=s=>`<a class="card rev" href="#/${s.id}"><img loading="lazy" src="${s.img}" alt="${s.n}"><div class="b"><h3>${s.n}</h3><p>${s.s}</p><span class="more">Explore →</span></div></a>`;
+const hd=(t,h,p)=>`<div class="center rev"><span class="tag">${t}</span><h2>${h}</h2><p class="lead">${p}</p></div>`;
+const cta=`<section><div class="wrap"><div class="cta rev"><span class="tag">Open 24/7</span><h2>Ready for a Home That Feels Reset?</h2><p class="lead" style="margin:0 auto 26px">Limited weekly availability in Rockville, MD.</p><a class="btn p" href="${BOOK}" target="_blank" rel="noopener">Book Your Cleaning</a> <a class="btn" href="tel:+13013511492">(301) 351-1492</a></div></div></section>`;
+const about=`<div class="wrap sp"><div class="rev"><span class="tag">About Us</span><h2>Cleaning With Care, Precision and Heart</h2><p class="lead">JudyMaids is a Rockville-based cleaning company built on the “little BIG details.” Our certified teams deliver consistent, quality-checked results for homes and workplaces.</p><ul class="ck"><li>Trained, tested and certified cleaners</li><li>Community impact: pantry donations to local food banks</li><li>Fully insured and trusted</li></ul><a class="btn p" href="#/about">Learn More About Us</a></div><img class="rev" loading="lazy" src="${U}2026/03/COMMUNITY-IMPACT.webp" alt="JudyMaids community impact"></div>`;
+const P={
+'':()=>`<section class="hero"><div class="hb" id="hb"></div><div class="wrap g"><div><span class="tag">Rockville, MD · Open 24/7</span><h1>A Home That Feels <em>Clean, Calm</em> &amp; Completely Reset</h1><p class="lead">Luxury, detail-driven cleaning for Rockville homes and workplaces, delivered by certified professionals.</p><div class="acts"><a class="btn p" href="#/services">Explore Services</a><a class="btn" href="tel:+13013511492">Call (301) 351-1492</a></div><div class="stats"><div><b>38+</b><small>Five-star reviews</small></div><div><b>24/7</b><small>Availability</small></div><div><b>100%</b><small>Certified team</small></div></div></div><div class="hi"><div id="tilt"><canvas id="hc" aria-label="3D cleaner mopping an office"></canvas><em class="lb">● LIVE 3D · Office Cleaning</em></div><span class="fi f1">🧴</span><span class="fi f2">🧽</span><span class="fi f3">🧹</span><span class="fi f4">🧼</span></div></div></section>
+<section><div class="wrap">${hd('Our Services','Cleaning Crafted for Every Space','Six signature services designed around your routine, your home and your standards.')}<div class="grid">${S.map(card).join('')}</div><div class="center rev" style="margin-top:44px"><a class="btn p" href="#/services">Explore Services</a></div></div></section>
+<section>${about}</section>
+<section class="why"><div class="wrap">${hd('Why Choose Us','A Higher Standard, Every Time','Consistency, reliability and the confidence that every detail is handled.')}<div class="grid">${[['🏅','Certified Cleaners','Trained, tested and quality checked.'],['🛡️','Fully Insured','Trusted care for your property.'],['🔍','Detail-Driven System','A structured inspection on every visit.'],['⭐','5-Star Rated','Loved by Rockville clients on Google.']].map(x=>`<div class="card rev"><div class="b"><div class="ic">${x[0]}</div><h3>${x[1]}</h3><p>${x[2]}</p></div></div>`).join('')}</div></div></section>
+<section class="rv"><div class="wrap">${hd('Customer Reviews','Our Clients Speak, Their Homes Shine','Real feedback from Google reviews.')}<div class="grid">${R.map(r=>`<div class="card rev"><div class="b"><div class="st">★★★★★</div><p>“${r[1]}”</p><small>— ${r[0]}</small></div></div>`).join('')}</div></div></section>
+<section><div class="wrap">${hd('FAQs','Frequently Asked Questions','Quick answers before you book.')}<div style="margin-top:40px">${FQ.map(f=>`<details class="rev"><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('')}</div></div></section>${cta}`,
+about:()=>`<section class="pg">${about}</section><section><div class="wrap">${hd('Our Process','Simple, Proven, Consistent','Consultation, custom plan, certified cleaning, detail inspection, final touches, ongoing care.')}<div class="grid">${['Consultation','Custom Plan','Certified Cleaning','Detail Inspection','Final Touches','Ongoing Care'].map((x,i)=>`<div class="card rev"><div class="b"><span class="tag">Step 0${i+1}</span><h3>${x}</h3></div></div>`).join('')}</div></div></section>${cta}`,
+services:()=>`<section class="pg"><div class="wrap">${hd('Services','Explore Our Cleaning Services','Choose the service that fits your home or business.')}<div class="grid">${S.map(card).join('')}</div></div></section>${cta}`,
+gallery:()=>`<section class="pg"><div class="wrap">${hd('Gallery','See What Your Home Could Feel Like','Real JudyMaids results.')}<div class="gal">${G.map(g=>`<img class="rev" loading="lazy" src="${g}" alt="JudyMaids cleaning result">`).join('')}</div></div></section>${cta}`,
+contact:()=>`<section class="pg"><div class="wrap sp"><div class="rev"><span class="tag">Contact Us</span><h2>Let’s Reset Your Space</h2><ul class="ck"><li>📍 Rockville, MD</li><li>📞 <a href="tel:+13013511492">(301) 351-1492</a></li><li>✉️ <a href="mailto:info@judymaids.com">info@judymaids.com</a></li><li>🕒 Open 24/7</li></ul><a class="btn p" href="${BOOK}" target="_blank" rel="noopener">Book Online</a></div><form class="rev" onsubmit="event.preventDefault();location.href='mailto:info@judymaids.com?subject=Quote request from '+encodeURIComponent(this.n.value)+'&body='+encodeURIComponent(this.m.value+' | Phone: '+this.p.value)"><input name="n" placeholder="Your name" required><input name="p" placeholder="Phone"><textarea name="m" rows="5" placeholder="How can we help?" required></textarea><button class="btn p">Send Message</button></form></div></section>`
+};
+S.forEach(s=>P[s.id]=()=>`<section class="pg"><div class="wrap sp"><div class="rev"><span class="tag">Service</span><h2>${s.n}</h2><p class="lead">${s.d}</p><ul class="ck">${s.l.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn p" href="${BOOK}" target="_blank" rel="noopener">Book This Service</a> <a class="btn" href="#/contact">Get a Quote</a></div><img class="rev" src="${s.img}" alt="${s.n}"></div></section><section><div class="wrap">${hd('More Services','Explore Other Services','')}<div class="grid">${S.filter(x=>x!==s).slice(0,3).map(card).join('')}</div></div></section>${cta}`);
+const nav=document.getElementById('nv');
+nav.innerHTML=`<a href="#/">Home</a><a href="#/about">About Us</a><div class="dd"><a href="#/services">Services ▾</a><div class="m">${S.map(s=>`<a href="#/${s.id}">${s.n}</a>`).join('')}</div></div><a href="#/gallery">Gallery</a><a href="#/contact">Contact Us</a>`;
+document.getElementById('bt').onclick=()=>nav.classList.toggle('o');
+function route(){
+ const k=location.hash.replace(/^#\/?/,'');
+ document.getElementById('app').innerHTML=(P[k]||P[''])();
+ document.title=(k&&P[k]?(S.find(s=>s.id===k)?.n||k[0].toUpperCase()+k.slice(1))+' | ':'')+'JudyMaids | Cleaning in Rockville, MD';
+ nav.classList.remove('o');scrollTo(0,0);
+ nav.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#/'+k));
+ const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&(x.target.classList.add('in'),io.unobserve(x.target))),{threshold:.12});
+ document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+ document.querySelectorAll('.card').forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*10}deg) rotateX(${-y*10}deg) translateY(-6px)`};c.onmouseleave=()=>c.style.transform=''});
+ bubbles();initHero();const t=document.getElementById('tilt');if(t)t.parentElement.onmousemove=e=>{const r=t.getBoundingClientRect();t.style.transform=`rotateY(${((e.clientX-r.left)/r.width-.5)*-24}deg) rotateX(${((e.clientY-r.top)/r.height-.5)*-10}deg)`};
+}
+
+/* logo: fallback + auto contrast chip */
+document.querySelectorAll('.logoimg').forEach(im=>{im.onerror=()=>{im.outerHTML='<span class="fb">JudyMaids</span>'}});
+(()=>{const t=new Image();t.crossOrigin='anonymous';t.onload=()=>{try{const c=document.createElement('canvas');c.width=c.height=64;const x=c.getContext('2d');x.drawImage(t,0,0,64,64);const d=x.getImageData(0,0,64,64).data;let l=0,n=0;for(let i=0;i<d.length;i+=4)if(d[i+3]>100){l+=(d[i]+d[i+1]+d[i+2])/3;n++}if(n&&l/n>170)document.querySelectorAll('.lg').forEach(e=>e.classList.add('dk'))}catch(e){}};t.src='https://judymaids.com/wp-content/uploads/2026/02/Judy-Maids-logo.png'})();
+function bubbles(){const h=document.getElementById('hb');if(!h)return;for(let i=0;i<26;i++){const b=document.createElement('i'),z=14+Math.random()*58;b.style.cssText=`left:${Math.random()*100}%;width:${z}px;height:${z}px;animation-duration:${7+Math.random()*9}s;animation-delay:${-Math.random()*12}s;--dx:${(Math.random()-.5)*160}px`;h.appendChild(b)}}
+
+/* ---------- 3D hero: cleaner mopping an office ---------- */
+let heroRAF=0,heroR=null;
+function initHero(){
+ cancelAnimationFrame(heroRAF);if(heroR){heroR.dispose();heroR=null}
+ const cv=document.getElementById('hc');if(!cv)return;
+ let R;try{R=heroR=new THREE.WebGLRenderer({canvas:cv,antialias:true})}catch(e){cv.outerHTML='<img src="'+U+'2026/03/Essential-Cleaning-Package.webp" alt="Office cleaning" style="width:100%">';return}
+ R.setPixelRatio(Math.min(devicePixelRatio,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+ R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.15;
+ const sc=new THREE.Scene();sc.background=new THREE.Color(0x0b1430);
+ const cam=new THREE.PerspectiveCamera(38,1,.1,60);
+ const fit=()=>{const w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()};fit();
+ const M=(c,r=.6,m=0)=>new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:m});
+ const add=(g,m,x,y,z,p=sc)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;p.add(o);return o};
+ const Bx=(w,h,d)=>new THREE.BoxGeometry(w,h,d),Cy=(a,b,h,n=20)=>new THREE.CylinderGeometry(a,b,h,n),Sp=(r)=>new THREE.SphereGeometry(r,24,18);
+ /* floor texture that gets cleaned */
+ const W=1024,H=768,bc=document.createElement('canvas');bc.width=W;bc.height=H;const bx=bc.getContext('2d');
+ bx.fillStyle='#dfe5f2';bx.fillRect(0,0,W,H);
+ for(let i=0;i<16;i++)for(let j=0;j<12;j++){bx.fillStyle=(i+j)%2?'#e8edf8':'#d6ddec';bx.fillRect(i*64,j*64,64,64)}
+ bx.strokeStyle='rgba(120,135,170,.35)';bx.lineWidth=2;for(let i=0;i<=16;i++){bx.beginPath();bx.moveTo(i*64,0);bx.lineTo(i*64,H);bx.stroke()}for(let j=0;j<=12;j++){bx.beginPath();bx.moveTo(0,j*64);bx.lineTo(W,j*64);bx.stroke()}
+ const fc=document.createElement('canvas');fc.width=W;fc.height=H;const fx=fc.getContext('2d');fx.drawImage(bc,0,0);
+ const dirt=(n,al)=>{for(let i=0;i<n;i++){const x=Math.random()*W,y=Math.random()*H,r=30+Math.random()*80,g=fx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,`rgba(74,60,44,${al})`);g.addColorStop(1,'rgba(74,60,44,0)');fx.fillStyle=g;fx.fillRect(x-r,y-r,r*2,r*2)}};
+ dirt(46,.55);
+ const ft=new THREE.CanvasTexture(fc);ft.encoding=THREE.sRGBEncoding;ft.anisotropy=8;
+ const fm=[M(0x1c2850),M(0x1c2850),new THREE.MeshStandardMaterial({map:ft,roughness:.28,metalness:.1}),M(0x1c2850),M(0x1c2850),M(0x1c2850)];
+ add(Bx(8,.2,6),fm,0,-.1,0);
+ /* walls */
+ const wallM=M(0xe3e9f7,.9);
+ add(Bx(8,3.6,.2),wallM,0,1.8,-3.1);add(Bx(.2,3.6,6.2),wallM,-4.1,1.8,0);
+ add(Bx(8,.14,.06),M(0x2f6bff,.5),0,.07,-2.96);add(Bx(.06,.14,6),M(0x2f6bff,.5),-3.96,.07,0);
+ /* window */
+ const win=new THREE.Mesh(new THREE.PlaneGeometry(2.4,1.7),new THREE.MeshBasicMaterial({color:0xcfe7ff}));win.position.set(-3.98,2.1,-.4);win.rotation.y=Math.PI/2;sc.add(win);
+ [[0,.88,2.5,.08],[0,-.88,2.5,.08]].forEach(f=>add(Bx(.1,f[3],f[2]),M(0xffffff),-3.97,2.1+f[1],-.4));
+ [-1.25,0,1.25].forEach(z=>add(Bx(.1,1.8,.08),M(0xffffff),-3.97,2.1,-.4+z));add(Bx(.1,1.8,.05),M(0xffffff),-3.97,2.1,-.4);
+ /* sign */
+ const sg=document.createElement('canvas');sg.width=512;sg.height=160;const sx=sg.getContext('2d');sx.fillStyle='#0a1535';sx.fillRect(0,0,512,160);sx.strokeStyle='#d9b66b';sx.lineWidth=6;sx.strokeRect(8,8,496,144);sx.fillStyle='#d9b66b';sx.font='bold 64px Georgia';sx.textAlign='center';sx.fillText('JudyMaids',256,92);sx.font='24px Arial';sx.fillStyle='#fff';sx.fillText('CERTIFIED CLEANING',256,132);
+ const sgt=new THREE.CanvasTexture(sg);sgt.encoding=THREE.sRGBEncoding;
+ const sign=new THREE.Mesh(new THREE.PlaneGeometry(1.8,.56),new THREE.MeshBasicMaterial({map:sgt}));sign.position.set(-.4,2.5,-2.98);sc.add(sign);
+ /* desk + monitor + chair */
+ const wood=M(0x8a6a4a,.5),dark=M(0x1b2238,.5,.4);
+ add(Bx(2.6,.08,1.1),wood,1.9,.78,-2.3);[[-1.2,-.5],[1.2,-.5],[-1.2,.5],[1.2,.5]].forEach(p=>add(Bx(.07,.74,.07),dark,1.9+p[0],.37,-2.3+p[1]));
+ add(Bx(.9,.55,.05),M(0x0a0f20,.3,.6),1.9,1.3,-2.55);add(Bx(.84,.49,.01),new THREE.MeshBasicMaterial({color:0x3f7bff}),1.9,1.3,-2.52);add(Cy(.05,.09,.28),dark,1.9,.96,-2.55);add(Bx(.55,.02,.18),dark,1.9,.83,-2.1);
+ add(Cy(.08,.08,.1),M(0xffffff),1.0,.87,-2.4);
+ const ch=new THREE.Group();ch.position.set(1.9,0,-1.3);ch.rotation.y=.5;sc.add(ch);
+ add(Cy(.3,.3,.07),M(0x222a44),0,.5,0,ch);add(Bx(.55,.08,.5),M(0x2f6bff,.8),0,.52,0,ch);add(Bx(.55,.6,.07),M(0x2f6bff,.8),0,.85,-.25,ch);add(Cy(.04,.04,.4),dark,0,.28,0,ch);add(Cy(.28,.28,.05),dark,0,.06,0,ch);
+ /* cabinet, plant, bucket, sign */
+ add(Bx(.8,1.3,.6),M(0xb7c0d6,.5,.3),-1.9,.65,-2.65);
+ add(Cy(.22,.17,.34),M(0xc9703c),-3.5,.17,-2.5);[[0,.6,0,.3],[.15,.45,.1,.2],[-.15,.5,-.1,.22],[.05,.85,.05,.2]].forEach(p=>add(Sp(p[3]),M(0x2d8a4e,.8),-3.5+p[0],p[1]+.15,-2.5+p[2]));
+ add(Cy(.24,.19,.42),M(0xf2c230,.4),-2.3,.21,1.1);
+ const sa=M(0xffd23a,.4);add(Bx(.35,.62,.03),sa,-2.8,.32,1.5).rotation.x=.25;add(Bx(.35,.62,.03),sa,-2.8,.32,1.28).rotation.x=-.25;
+ /* lights */
+ sc.add(new THREE.HemisphereLight(0xbcd0ff,0x1a2040,.6));
+ const key=new THREE.DirectionalLight(0xfff1d8,1.5);key.position.set(-6,6,3);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-6,right:6,top:6,bottom:-6});key.shadow.bias=-.0004;sc.add(key);
+ const pl=new THREE.PointLight(0xffe2b0,.7,12);pl.position.set(0,3.2,1);sc.add(pl);
+ /* the cleaner */
+ const man=new THREE.Group();sc.add(man);
+ const skin=M(0xdba883,.7),blue=M(0x2f6bff,.6),navy=M(0x16224a,.7),glove=M(0xffd23a,.5);
+ const legs=[-1,1].map(sd=>{const g=new THREE.Group();g.position.set(sd*.11,.95,0);man.add(g);add(Cy(.085,.07,.9),navy,0,-.47,0,g);add(Bx(.14,.08,.28),M(0x10131f),0,-.92,.06,g);return g});
+ add(Cy(.2,.22,.2),navy,0,.98,0,man);
+ const tor=add(Cy(.25,.21,.62),blue,0,1.3,0,man);add(Cy(.05,.05,.01),M(0xd9b66b,.3,.8),.1,1.45,.235,man).rotation.x=Math.PI/2;
+ add(Cy(.06,.07,.1),skin,0,1.66,0,man);add(Sp(.15),skin,0,1.78,0,man);
+ add(new THREE.SphereGeometry(.165,24,12,0,Math.PI*2,0,Math.PI/2),blue,0,1.81,0,man);add(Bx(.2,.02,.14),blue,0,1.8,.17,man);
+ [-.055,.055].forEach(x=>add(Sp(.016),M(0x111111),x,1.79,.14,man));add(Sp(.02),skin,0,1.76,.15,man);
+ add(Sp(.09),blue,-.27,1.5,0,man);add(Sp(.09),blue,.27,1.5,0,man);
+ const limb=(r,col)=>{const m=new THREE.Mesh(Cy(r,r*.9,1,14),col);m.castShadow=true;man.add(m);return m};
+ const place=(m,a,b)=>{const d=b.clone().sub(a),l=d.length();m.position.copy(a).addScaledVector(d,.5);m.scale.y=l;m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize())};
+ const arm=[{s:new THREE.Vector3(-.27,1.5,0),u:limb(.065,blue),f:limb(.055,blue),h:add(Sp(.07),glove,0,0,0,man),sd:-1},{s:new THREE.Vector3(.27,1.5,0),u:limb(.065,blue),f:limb(.055,blue),h:add(Sp(.07),glove,0,0,0,man),sd:1}];
+ const ik=(A,hand)=>{const L=.35,S=A.s,v=hand.clone().sub(S);let d=Math.min(v.length(),L*2-.01);const dir=v.clone().normalize(),a=d/2,h=Math.sqrt(Math.max(L*L-a*a,0));const pole=new THREE.Vector3(A.sd*.5,-1,-.4);pole.addScaledVector(dir,-pole.dot(dir)).normalize();const el=S.clone().addScaledVector(dir,a).addScaledVector(pole,h);place(A.u,S,el);place(A.f,el,hand);A.h.position.copy(hand)};
+ /* mop */
+ const mh=limb(.018,M(0xb98a52,.5)),mopHead=new THREE.Group();man.add(mopHead);add(Bx(.5,.05,.14),M(0x2f6bff),0,.1,0,mopHead);add(Bx(.46,.1,.12),M(0xf5f7ff,.95),0,.03,0,mopHead);
+ /* particles: sparkles + bubbles */
+ const cn=document.createElement('canvas');cn.width=cn.height=64;const g2=cn.getContext('2d'),gr=g2.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'#fff');gr.addColorStop(.3,'rgba(255,240,200,.8)');gr.addColorStop(1,'rgba(255,230,160,0)');g2.fillStyle=gr;g2.fillRect(0,0,64,64);
+ const NP=50,pp=new Float32Array(NP*3),pv=[];for(let i=0;i<NP;i++){pv.push({l:Math.random(),vy:.4+Math.random()*.6})}
+ const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pp,3));
+ sc.add(new THREE.Points(pg,new THREE.PointsMaterial({size:.14,map:new THREE.CanvasTexture(cn),transparent:true,depthWrite:false,blending:THREE.AdditiveBlending})));
+ const bm=new THREE.MeshStandardMaterial({color:0xbfe0ff,transparent:true,opacity:.35,roughness:.05,metalness:.2}),bub=[];
+ for(let i=0;i<14;i++){const b=new THREE.Mesh(Sp(1),bm);b.userData={l:Math.random(),r:.03+Math.random()*.05,o:Math.random()*6};sc.add(b);bub.push(b)}
+ /* animate */
+ let t=0,mx=0,my=0,last=null,dt=0,reDirt=0;const wp=new THREE.Vector3();
+ addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});addEventListener('resize',fit);
+ const Rh=new THREE.Vector3(),Lh=new THREE.Vector3(),top=new THREE.Vector3(),hd=new THREE.Vector3();
+ (function loop(){heroRAF=requestAnimationFrame(loop);t+=.016;
+  const sw=Math.sin(t*1.5),sw2=Math.cos(t*1.5);
+  man.position.set(-.3+.7*Math.sin(t*.25),Math.abs(Math.sin(t*1.5))*.012,.1);man.rotation.y=.3+.5*sw;
+  legs[0].rotation.x=.12*sw;legs[1].rotation.x=-.12*sw;tor.rotation.z=.02*sw;
+  Rh.set(.05+.05*sw,1.3,.28+.05*sw2);Lh.set(.02+.05*sw,1.08,.38+.05*sw2);
+  hd.copy(Lh).sub(Rh);const k=(Lh.y-.06)/-hd.y;const head=Lh.clone().addScaledVector(hd,k);
+  top.copy(Rh).addScaledVector(hd.clone().normalize(),-.3);
+  place(mh,top,head);mopHead.position.copy(head);mopHead.position.y=.01;mopHead.rotation.y=.3*sw;
+  arm.forEach((A,i)=>ik(A,i?Rh:Lh));
+  /* clean the floor under the mop */
+  wp.copy(mopHead.position);man.updateMatrixWorld();man.localToWorld(wp);
+  const px=(wp.x+4)/8*W,py=(wp.z+3)/6*H;
+  if(last){const n=6;for(let i=0;i<=n;i++){const x=last[0]+(px-last[0])*i/n,y=last[1]+(py-last[1])*i/n;fx.save();fx.beginPath();fx.arc(x,y,34,0,6.283);fx.clip();fx.drawImage(bc,0,0);fx.fillStyle='rgba(255,255,255,.14)';fx.fill();fx.restore()}}
+  last=[px,py];reDirt+=.016;if(reDirt>5){reDirt=0;dirt(6,.5)}ft.needsUpdate=true;
+  pv.forEach((p,i)=>{p.l+=.016*p.vy;if(p.l>1){p.l=0;pp[i*3]=wp.x+(Math.random()-.5)*.5;pp[i*3+1]=.1;pp[i*3+2]=wp.z+(Math.random()-.5)*.3}pp[i*3+1]+=.012*p.vy;pp[i*3]+=Math.sin(t*3+i)*.002});pg.attributes.position.needsUpdate=true;
+  bub.forEach(b=>{const u=b.userData;u.l+=.004;if(u.l>1){u.l=0;u.x=wp.x+(Math.random()-.5)*.4;u.z=wp.z+(Math.random()-.5)*.2}b.position.set((u.x||wp.x)+Math.sin(t*2+u.o)*.06,.1+u.l*1.6,u.z||wp.z);b.scale.setScalar(u.r*(1-u.l*.3))});
+  cam.position.lerp(new THREE.Vector3(3.5+mx*1.6,2.6-my*.8,6.3),.05);cam.lookAt(0,1.05,-.2);
+  R.render(sc,cam)})();
+}
+addEventListener('hashchange',route);route();
+addEventListener('load',()=>setTimeout(()=>document.getElementById('ld').classList.add('h'),1600));
+/* 3D scroll background: soap bubbles + sparkles */
+(()=>{
+ const cv=document.getElementById('bg'),r=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+ r.setPixelRatio(Math.min(devicePixelRatio,2));
+ const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,200);cam.position.z=14;
+ const bm=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+  vertexShader:'varying vec3 n;varying vec3 v;void main(){n=normalize(normalMatrix*normal);vec4 p=modelViewMatrix*vec4(position,1.);v=normalize(-p.xyz);gl_Position=projectionMatrix*p;}',
+  fragmentShader:'varying vec3 n;varying vec3 v;void main(){float f=pow(1.-abs(dot(n,v)),2.4);vec3 c=.5+.5*cos(6.28*(f*1.2+vec3(0.,.33,.67)));gl_FragColor=vec4(c*f*1.3+vec3(.55,.75,1.)*.04,f*.9+.03);}'});
+ const bg=new THREE.SphereGeometry(1,32,24),bub=[];
+ for(let i=0;i<46;i++){const m=new THREE.Mesh(bg,bm);m.position.set((Math.random()-.5)*34,(Math.random()-.5)*50,-Math.random()*60);m.scale.setScalar(.4+Math.random()*1.5);m.userData={s:.004+Math.random()*.012,p:Math.random()*6.28};sc.add(m);bub.push(m)}
+ // sparkles
+ const cn=document.createElement('canvas');cn.width=cn.height=64;const g=cn.getContext('2d'),gr=g.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'#fff');gr.addColorStop(.25,'rgba(255,240,200,.8)');gr.addColorStop(1,'rgba(255,230,160,0)');g.fillStyle=gr;g.fillRect(0,0,64,64);g.strokeStyle='rgba(255,255,255,.9)';g.lineWidth=2;g.beginPath();g.moveTo(32,2);g.lineTo(32,62);g.moveTo(2,32);g.lineTo(62,32);g.stroke();
+ const pa=[],N=700;for(let i=0;i<N;i++)pa.push((Math.random()-.5)*60,(Math.random()-.5)*60,-Math.random()*75);
+ const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.Float32BufferAttribute(pa,3));
+ const pm=new THREE.PointsMaterial({size:.55,map:new THREE.CanvasTexture(cn),transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:.85});
+ const pts=new THREE.Points(pg,pm);sc.add(pts);
+ let sy=0,mx=0,my=0,t=0;
+ const rs=()=>{r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};rs();addEventListener('resize',rs);
+ addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+ (function a(){requestAnimationFrame(a);t+=.016;
+  const ty=scrollY/Math.max(1,document.body.scrollHeight-innerHeight);sy+=(ty-sy)*.06;
+  cam.position.z=14-sy*55;cam.position.y=-sy*6-my*1.5;cam.position.x=mx*2;
+  bub.forEach(m=>{m.position.y+=m.userData.s*6;m.position.x+=Math.sin(t+m.userData.p)*.008;if(m.position.y>26)m.position.y=-26});
+  pm.opacity=.65+Math.sin(t*3)*.2;pts.rotation.z=Math.sin(t*.1)*.05;r.render(sc,cam)})();
+})();
+</script>
+</body>
+</html>
